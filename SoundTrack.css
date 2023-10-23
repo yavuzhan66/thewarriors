@@ -1,0 +1,29 @@
+body{ 
+background-image: url("gangs.png");
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: center;
+width: 0%;
+height: 0%
+}
+
+
+
+
+h1 {
+font-family: sans-serif ;
+color:white;
+text-align: center ;
+text-decoration: underline;
+}
+
+
+img{
+width: 0%;
+height: 0%
+}
+
+
+
+
+
