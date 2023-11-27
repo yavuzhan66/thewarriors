@@ -47,74 +47,61 @@ margin-top: 30px;
 }
 
 
-.btn-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
+
+body{font-family: sans-serif;
+padding: 50px;
+background: linear-gradient(45deg, #f37, #f3e) center center no-repeat;
+line-height: 1.4;
+}
+
+
+
+
+.title {
+  font-size: 24px;
+color: #fff;
+font-weight: bold;
+margin-bottom: 25px;
+}
+
+.item {
+  margin: 40px 10px;
+  background-color: #fff;
+  box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+  transition: transform 0.3s;
+  transform: translate3d(0, -1px, 0);
+}
+
+.item:hover {
+  transform:translate3d(0, -10px, 0);
+}
+
+.item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.item_body{
+padding: 24px;
   
-  .hero-slider,
-  .hero-card { position: relative; }
-  
-  .hero-card .play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--white);
-    color: var(--charcoal);
-    font-size: 2rem;
-    padding: 25px;
-    border-radius: var(--radius-circle);
-    transition: var(--transition-1);
-    animation: pulse 2s ease infinite;
-  }
-  
-  .hero-card .play-btn:is(:hover, :focus-visible) { color: var(--violet-blue-crayola); }
-  
-  @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--white_a70); }
-    75% { box-shadow: 0 0 0 20px transparent; }
-  }
-  
-  .hero .slider-inner {
-    border-radius: var(--radius-10);
-    overflow: hidden;
-  }
-  
-  .hero .slider-container {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    transition: var(--transition-2);
-  }
-  
-  .hero .slider-item {
-    min-width: 100%;
-    width: 100%;
-    border-radius: var(--radius-10);
-    overflow: hidden;
-  }
-  
-  .hero .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--white_a70);
-    color: var(--charcoal);
-    font-size: 2rem;
-    padding: 12px;
-    border-radius: var(--radius-circle);
-    transition: var(--transition-1);
-  }
-  
-  .hero .slider-btn:is(:hover, :focus-visible) { background-color: var(--white); }
-  
-  .hero .slider-btn.prev { left: 20px; }
-  
-  .hero .slider-btn.next { right: 20px; }
-  
-  
+}
+
+.item_title {
+  font-size: 24px;
+font-weight: bold;
+margin-bottom: 5px;
+color: #232323;
+}
+
+.item_description {
+  color: #585858;
+}
+
+.items {
+  position: relative;
+}
+
+
+
+
